@@ -157,6 +157,7 @@ gboolean xtp_update_universal(XtpDialogWidgets *dw)
 			dw->buffer[sz] = '\0';
 			if(cp = strrchr(dw->buffer, '\n')) { *cp = '\0'; }
 			dw->set_markup(dw->xtpd, dw->buffer);
+			close(fd);
 			break;
 		case xtp_stat: /* fall-through to default */
 		default:
