@@ -64,7 +64,7 @@ install: $(SHLIB) $(DTFILE)
 	sudo cp $(DTFILE) /usr/share/xfce4/panel-plugins
 
 restart:
-	xfce4-panel -r
+	DISPLAY=:0 xfce4-panel -r
 
 debug:
 	xfce4-panel -q
