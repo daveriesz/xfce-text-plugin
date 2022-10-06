@@ -38,7 +38,8 @@ $(DTFILE): Makefile
 	@echo "Name=XFCE Text Plugin" >> "$@"
 	@echo "Comment=XFCE Text Plugin" >> "$@"
 	@echo "X-XFCE-Module=$(PLUGINNAME)" >> "$@"
-	@echo "X-XFCE-Module-Path=$(PLUGINDIR)" >> "$@"
+	@echo "X-XFCE-Internal=TRUE" >> "$@"
+	@echo "X-XFCE-API=2.0" >> "$@"
 
 %.o: %.c
 	@echo " + CC $<"
