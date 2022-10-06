@@ -23,7 +23,7 @@ LDFLAGS  = \
 	$(shell pkg-config --libs gtk+-3.0)
 
 DTFILE = $(PLUGINNAME).desktop
-PLUGINDIR = /usr/lib/x86_64-linux-gnu/xfce4/panel-plugins
+PLUGINDIR = /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins
 
 all: $(SHLIB) $(DTFILE)
 
@@ -61,7 +61,7 @@ misclean:
 
 install: $(SHLIB) $(DTFILE)
 	sudo cp $(SHLIB) $(PLUGINDIR)
-	sudo cp $(DTFILE) /usr/share/xfce4/panel-plugins
+	sudo cp $(DTFILE) /usr/share/xfce4/panel/plugins
 
 restart:
 	DISPLAY=:0 xfce4-panel -r

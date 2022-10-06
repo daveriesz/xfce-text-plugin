@@ -11,6 +11,8 @@
 #include <libxfce4panel/xfce-panel-plugin.h>
 #include <libxfce4util/libxfce4util.h>
 #include <libxfce4ui/libxfce4ui.h>
+#include <libxfce4panel/xfce-panel-convenience.h>
+#include <libxfce4panel/xfce-panel-macros.h>
 
 #include "data.h"
 #include "debug.h"
@@ -248,4 +250,5 @@ static void xtp_constructor(XfcePanelPlugin *plugin)
 }
 
 
-XFCE_PANEL_PLUGIN_REGISTER_INTERNAL(xtp_constructor);
+//XFCE_PANEL_PLUGIN_REGISTER_INTERNAL(xtp_constructor);
+XFCE_PANEL_PLUGIN_REGISTER(xtp_constructor);
