@@ -36,5 +36,5 @@ respective system directories.  Before using the "install" target, please run:
 to make sure that the output locations are suitable.
 
 This plugin has been developed and tested on x86_64 platforms with Xubuntu 14.04
-and 16.04 installations.
+through 22.04 LTS isntallations.
 
